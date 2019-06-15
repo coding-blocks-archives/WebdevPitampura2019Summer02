@@ -1,0 +1,76 @@
+<html>
+    <body>
+        <table border="2" cellspacing="2" cellpadding="2">
+            <!-- cell padding and apcing for spaces and pading between columns-->
+                <tr>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td rowspan="5" align="center">B<br>R<br>E<br>A<br>K</td>
+                    <td>Phy</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                        <td></td>
+                        <td></td>
+                        
+                        <td colspan="2" align="center">Games</td>
+                        
+                    </tr>
+                    <tr>
+                           
+                            
+                            <td colspan="2" align="center">Phy</td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                        
+                            <td colspan="2"> </td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+            
+        </table>
+
+        <br><br>
+        <table border="2">
+            
+                <tr>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td  align="center">B</td>
+                    <td>Phy</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                        <td></td>
+                        <td></td>
+                        <td  align="center">R</td>
+                        <td colspan="2" align="center">Games</td>
+                        
+                    </tr>
+                    <tr>
+                           
+                            
+                            <td colspan="2" align="center">Phy</td>
+                            <td  align="center">E</td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                        
+                            <td colspan="2"> </td>
+                            <td  align="center">A</td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+                            <tr>
+                        
+                                    <td colspan="2"> </td>
+                                    <td  align="center">K</td>
+                                    <td></td>
+                                    <td></td>
+                                    </tr>
+            
+        </table>
+        
+    </body>
+</html>
