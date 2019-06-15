@@ -1,0 +1,39 @@
+<html>
+	
+	<body>
+  
+		<table border="2" cellspacing="3" cellpadding="5">
+
+			<tr >
+				<td>english</td>
+				<td>maths</td>
+				<td rowspan="5"> B<br>R<br>E<br>A<br>K</td>
+				<td align="center">physics</td>
+				<td>html</td>
+			</tr>
+				<tr>
+				<td> </td>
+				<td> </td>
+				<td colspan="2" align="center">games</td>
+			</tr>
+
+			<tr >
+				<td colspan="2" align="center">physics</td>
+				<td > </td>
+				<td> </td>
+			</tr>
+
+			<tr>
+				<td rowspan="2"></td>
+				<td rowspan="2"></td>
+				<td rowspan="2"></td>
+				<td rowspan="2"></td>
+			</tr>
+
+
+
+    </table>
+
+	</body>
+  
+</html>
