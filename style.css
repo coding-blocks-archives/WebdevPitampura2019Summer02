@@ -1,0 +1,30 @@
+*{
+    color:blueviolet;    /*universal selector*/
+}
+ p{
+     background-color:antiquewhite;  /*element selector*/ 
+ }
+ .para1{
+     color:green;      /*class selector*/
+ }
+ #p1{
+     color:yellow;    /*id selector*/
+ }
+ .container{
+     height:200px;
+     width:500px;
+     background-color:violet;
+     margin:50px;
+     padding:20px;
+     border :solid 5px blue;
+
+ }
+ .item{
+     height: 101px;
+     width:250px;
+     background-color:red;
+     margin:20px;
+     border: solid 2px black;
+     padding:10px;
+
+ }
