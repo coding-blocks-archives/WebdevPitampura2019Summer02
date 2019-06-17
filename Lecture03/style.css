@@ -1,0 +1,16 @@
+p {
+    color: blueviolet;
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 20px;
+}
+
+.para1 {
+    color: green;
+}
+
+#p1 {
+    color: black;
+}

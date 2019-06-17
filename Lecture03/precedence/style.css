@@ -1,0 +1,16 @@
+a {
+    color: aqua;
+}
+
+* {
+    font-family: 'Courier';
+    background-color: aqua;
+}
+
+.url {
+    background-color: antiquewhite;
+}
+
+#id1 {
+    background-color: brown;
+}
