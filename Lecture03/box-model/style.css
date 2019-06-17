@@ -1,0 +1,22 @@
+.container1 {
+    height: 200px;
+    width: 500px;
+    background-color: blue;
+    margin: 200px;
+    padding: 20px;
+    border: solid 2px black;
+}
+.container2 {
+    height: 200px;
+    width: 500px;
+    background-color: blue;
+    margin-top: 100px;
+    padding: 20px;
+    border: solid 2px black;
+}
+
+.item {
+    height: 100px;
+    width: 300px;
+    background-color: brown;
+}

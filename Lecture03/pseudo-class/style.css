@@ -1,0 +1,11 @@
+a:hover {
+    color: aqua;
+}
+
+a:active {
+    color: purple;
+}
+
+p:first-child {
+    background-color: brown;
+}
