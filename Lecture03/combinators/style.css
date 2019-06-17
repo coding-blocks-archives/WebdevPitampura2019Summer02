@@ -1,0 +1,15 @@
+div p{
+    color: brown;
+}
+
+div > p{
+    background-color: yellow;
+}
+
+div + p{
+    margin: 50px;
+}
+
+div ~ p{
+    background-color: aqua;
+}
