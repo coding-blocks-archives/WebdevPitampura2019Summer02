@@ -1,0 +1,27 @@
+a:hover{
+    color: brown;
+}
+
+a:active{
+    color: orchid;
+    size: 20px;
+}
+
+p:first-child{
+    background-color: black;
+    color: limegreen;
+}
+
+p:last-child{
+    color: violet;
+}
+#div3{
+
+    background-color: antiquewhite;
+}
+
+
+.red-input:focus {
+    background: yellow;
+    color: rgb(248, 52, 52);
+  }

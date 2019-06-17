@@ -1,0 +1,29 @@
+p{
+    color: rgb(40, 79, 206);
+    background-color: rgb(238, 175, 59);
+}
+
+.para1{
+    color: chocolate;
+    background-color: darkkhaki;
+}
+
+#p2{
+    size: 3px;
+    color: green;
+}
+
+#p4{
+    font-family: 'Times New Roman';
+    color: blue;
+}
+
+
+*{
+    margin: 20px;
+}
+
+h1{
+    font-style: italic;
+    background-color: lightgray;
+}
