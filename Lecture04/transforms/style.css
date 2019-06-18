@@ -22,10 +22,10 @@ div {
     transform: skew(20deg)
 } */
 
-#div1 {
+/* #div1 {
     transform: translateX(70px) rotateY(50deg) 
-}
+} */
 
-#div2 {
+/* #div2 {
     transform: rotateY(50deg) translateX(70px)
-}
+} */
