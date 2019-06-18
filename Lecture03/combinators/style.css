@@ -1,0 +1,18 @@
+div p{
+    background-color: blanchedalmond;
+}
+div > p{
+    color: green;
+}
+
+div ~ p{
+    background-color: limegreen;
+}
+
+div + p{
+    color : violet;
+}
+
+#q{
+    border: 3px;
+}
