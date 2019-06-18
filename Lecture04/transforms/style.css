@@ -1,0 +1,31 @@
+div {
+    height: 100px;
+    width: 200px;
+    background-color: coral;
+    margin: 30px;
+    text-align: center;
+}
+
+/* #div1 {
+    transform: translate(20px, 20px)
+} */
+
+/* #div2 {
+    transform: scale(1.5);
+} */
+
+/* #div3 {
+    transform: rotate(50deg)
+} */
+
+/* #div4 {
+    transform: skew(20deg)
+} */
+
+/* #div1 {
+    transform: translateX(70px) rotateY(50deg) 
+} */
+
+/* #div2 {
+    transform: rotateY(50deg) translateX(70px)
+} */

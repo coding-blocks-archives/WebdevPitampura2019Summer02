@@ -1,0 +1,37 @@
+div {
+    height: 100px;
+    width: 500px;
+    background-color: bisque;
+    text-align: center;
+    /* margin: 20px; */
+    border: solid 2px black;
+}
+
+/* #div2 {
+    position: relative;
+    top: -100px;
+    right: 100px;
+} */
+
+/* #div3 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+} */
+
+/* #div4 {
+    position: sticky;
+    top: 10px;
+    left: 60%;
+} */
+
+#div0 {
+    position: relative;
+    /* top: 10px; */
+}
+
+#div1 {
+    position: absolute;
+    /* top: 20px; */
+    /* left: 20px; */
+}
