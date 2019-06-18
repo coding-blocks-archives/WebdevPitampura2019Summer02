@@ -1,0 +1,28 @@
+div{
+    height:100px;
+    background-color: blue;
+    margin:50px;
+}
+#div1
+{
+    position :static;
+    margin: 50px;
+}
+#div2
+{
+    position: relative;
+    background-color: blueviolet;
+}
+#div3
+{
+    position:fixed;
+    background-color: 00ffff;
+
+}
+#div4
+{
+    position:sticky;
+    background-color: aa00ff;
+    top:1px;
+}
+

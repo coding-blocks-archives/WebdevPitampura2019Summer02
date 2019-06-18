@@ -1,0 +1,17 @@
+div{
+    width:200px;
+    height:180px;
+    box-shadow: 5px 5px 3px;
+    background-color: blue;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+div:hover{
+    transform:translate(-3px,-3px);
+    transition: transform 1s;
+    box-shadow: 8px 8px 6px;
+}
+div:active{
+    transform:translate(3px,3px);
+    box-shadow: 5px 5px 3px;  
+}

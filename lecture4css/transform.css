@@ -15,7 +15,7 @@ text-align: center;
 }
 #div3
 {
-    transform: rotate(40deg);
+    transform: rotate(40deg);/*here order maitains*/
 }
 #div4
 {
