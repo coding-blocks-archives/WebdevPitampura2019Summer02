@@ -1,0 +1,22 @@
+#box {
+    margin: 50px;
+    padding: 10px;
+    height: 100px;
+    width: 300px;
+    background-color: darkcyan;
+    color: white;
+    box-shadow: -5px -5px 5px darkslategray;
+    font-size: 25pt;
+}
+
+#box:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 15px 15px 8px darkslategray;
+    transition: 0.5s;
+}
+
+#box:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 3px darkslategray;
+    transition: 0.2s;
+}
