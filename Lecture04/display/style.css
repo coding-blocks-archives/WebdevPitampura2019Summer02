@@ -1,0 +1,12 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse; 
+    text-align: center;
+    /* display: none; */
+}
+
+div:active {
+    display: none;
+}
+
