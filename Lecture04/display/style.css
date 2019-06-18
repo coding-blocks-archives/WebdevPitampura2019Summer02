@@ -1,9 +1,9 @@
-div {
+.item {
     height: 100px;
     width: 100px;
     background-color: chartreuse; 
     text-align: center;
-    /* display: none; */
+    display: inline-block;
 }
 
 div:active {
