@@ -1,0 +1,23 @@
+div{
+    height: 100px;
+    width:200px;
+background-color: blue;
+margin: 20px;
+text-align: center;
+}
+#div1{
+    transform: translate(5px,4px);
+
+}
+#div2
+{
+    transform:scale(1.4);
+}
+#div3
+{
+    transform: rotate(40deg);
+}
+#div4
+{
+    transform: skew(40deg);
+}
