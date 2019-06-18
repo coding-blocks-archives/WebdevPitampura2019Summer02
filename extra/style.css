@@ -1,0 +1,7 @@
+ul ul{
+    display: none;
+}
+
+.hide:hover > ul{
+    display: block;
+}
