@@ -1,0 +1,37 @@
+/*
+#div2{
+
+    height: 100px;
+    width: 200px;
+    margin: 100px;
+    box-shadow: 10px 10px 10px black;
+    position: fixed;
+    top: 0px;
+}
+*/
+
+#div1{
+    height: 100px;
+    width: 200px;
+    color: antiquewhite;
+    font-size: 2em;
+    background-color: darkcyan;
+    margin: 100px;
+    box-shadow: 10px 10px 10px black;
+   
+}
+
+#div1:hover{
+    transform: translate(-20px,-20px);
+    box-shadow: 20px 20px 10px black;
+    transition: 1s;
+
+}
+
+
+#div1:active{
+    transform: translate(20px,20px);
+    box-shadow: 7px 7px 3px black;
+    transition: 0.6s;
+}
+

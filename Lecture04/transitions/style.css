@@ -1,0 +1,16 @@
+div{
+    height: 100px;
+    width: 200px;
+    margin: 80px;
+    margin-left: 150px;
+    border: solid 2px black;
+    background-color: darkkhaki;
+}
+
+#div1:hover{
+    transform:scale(2);
+    background-color: red;
+    box-shadow: 5px 5px 5px brown;
+    transition: transform 2s, background-color 1s, box-shadow 4s;
+    
+}

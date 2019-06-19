@@ -1,0 +1,31 @@
+div{
+    height: 150px;
+    width: 600px;
+    background-color: rgb(158, 255, 145);
+    text-align: center;
+    margin: 80px;
+    border: solid 2px black;
+}
+
+#div1{
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+
+#div3{
+    position: fixed;
+    right: 60px;
+    top: 30px;
+}
+
+#div4{
+    position: sticky;
+    top: 5px;
+    left: 50%;
+}
+
+#div6{
+    position: absolute;
+    
+}
