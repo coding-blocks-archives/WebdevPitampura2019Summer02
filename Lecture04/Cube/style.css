@@ -1,0 +1,51 @@
+.outer{
+    height: 300px;
+    width: 300px;
+    perspective: 900px;
+    border: 1px solid #CCC;
+    margin: 100px;
+}
+.cube{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.face{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border: solid 1px black;
+    font-size: 40px;
+    text-align: center;
+    line-height: 200px;
+    font-weight: bold;
+}
+.front{
+    transform: rotateY(0deg) translateZ(150px);
+    transition: 3s;
+}
+.right{
+    transform: rotateY(90deg) translateZ(150px);
+    transition: 3s;
+}
+
+.left{
+    transform: rotateY(-90deg) translateZ(150px);
+    transition: 3s;
+}
+
+.back{
+    transform: rotateY(180deg) translateZ(150px);
+    transition: 3s;
+}
+
+.top{
+    transform: rotateX(90deg) translateZ(150px);
+    transition: 3s;
+}
+
+.bottom{
+    transform: rotateX(-90deg) translateZ(150px);
+    transition: 3s;
+}
