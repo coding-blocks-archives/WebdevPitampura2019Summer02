@@ -1,4 +1,6 @@
 body{
+    padding-top: 100px;
+    padding-left: 100px;
     margin: 0;
     display: flex;
     align-items: center;
@@ -8,21 +10,30 @@ body{
 }
 
 .cube{
-    margin-top: 100px;
+    margin-top: 200px;
     height: 100px;
     width: 100px;
     position: relative;
     transform-style: preserve-3d;
+    transform: rotate3d(30, 0, 0, 35deg) scale3d(1,1,1);
+    transition-property: all;
+    transition-duration: 2s;
 }
+
+.cube:active{
+    transform: rotate3d(90, -45, 70, 100deg) scale3d(1.5,1.2,1.2);    
+}
+
 
 #top, #bottom, #left, #right, #front, #back{
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 30px;
 }
 
 
@@ -47,11 +58,11 @@ body{
 }
 
 #front{
-    background: violet;
-    transform: rotateZ(90deg) translateZ(100px);
+    background: rgba(226, 207, 100, 0.7);
+    transform: translateZ(100px);
+    z-index: 10;
 }
 
 #back{
     background: brown;
-    transform: rotateZ(90deg) translateZ(100px);
 }
