@@ -1,0 +1,78 @@
+.wrap {
+	perspective: 800px;
+    perspective-origin: 50% 100px;
+}
+.cube {
+    border-block: 100px solid black;
+	position: relative;
+	width: 200px;
+    transform-style: preserve-3d;
+    line-height: 200px;
+    text-align: center;
+}
+.cube div {
+    border-color: black;
+    border-width: 1.5px;
+    border-style: inset;
+    opacity: 0.65;
+    text-align: center;
+	position: absolute;
+	width: 200px;
+    height: 200px;
+
+}
+.back {
+    /* opacity: 0.7; */
+    
+    text-align: center;
+    background-color: red;
+	transform: translateZ(-100px) rotateY(180deg);
+}
+.right {
+    /* opacity: 0.7; */
+    text-align: center;
+    background-color: red;
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+}
+.left {
+    /* opacity: 0.7; */
+    text-align: center;
+    background-color: red;
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+}
+.top {
+    /* opacity: 0.7; */
+    text-align: center;
+    background-color: red;
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+}
+.bottom {
+    /* opacity: 0.7; */
+    background-color: red;
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+}
+.front {
+    text-align: center;
+    background-color: red;
+	transform: translateZ(100px);
+}
+.cube:hover{
+    transform: rotate3d(1,1,1,45deg);
+    transition: transform 2s;
+}
+.cube:active{
+    transform: rotate3d(1,1,0,270deg);
+    transition: transform 2s;
+}
+/* @keyframes spin{
+    from {transform: rotateY(0);}
+    to {transform: rotateY(360deg);}
+}
+.cube:hover{
+    animation: spin 5s infinite linear;
+    animation-delay: 0ms;
+} */
