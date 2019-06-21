@@ -1,0 +1,19 @@
+.item {
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse; 
+    text-align: center;
+    display: inline-block;
+}
+
+div:active {
+    display: none;
+}
+
+ul ul {
+    display: none;
+}
+
+li:hover > ul {
+    display: block;
+}

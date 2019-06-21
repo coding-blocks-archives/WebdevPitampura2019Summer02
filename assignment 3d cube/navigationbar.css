@@ -1,0 +1,9 @@
+
+.item{
+    background-color:violet;
+color:red;
+    display: inline;
+}
+li :hover>ul{
+    display:active;
+}
