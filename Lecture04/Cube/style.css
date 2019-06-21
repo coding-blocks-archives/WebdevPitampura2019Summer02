@@ -23,7 +23,7 @@
     border: solid 2px black;
     font-size: 6em;
     text-align: center;
-    line-height: 200px;
+    line-height: 300px;
     font-weight: bold;
     background-color: rgba(27, 126, 255, 0.589);
     color: antiquewhite;
@@ -57,9 +57,11 @@
 }
 
 .cube:hover{
-    transform: translateZ(-100px) rotateZ(45deg) rotateX(30deg);
+    transform:  translateZ(-100px) rotateZ(45deg) rotateX(30deg);
+    transition: 1.5s;
 }
 
 .cube:active{
-    transform: translate(-100px) rotateY(75deg) rotateZ(150deg);
+    transform:  translateZ(-100px)rotateY(75deg) rotateZ(150deg);
+    transition: 1.5s;
 }
