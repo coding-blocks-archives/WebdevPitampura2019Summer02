@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/hwstyle.css">
-    <title>Home Work</title>
+    <link rel="shortcut icon" href="../images/favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Deepanshu</title>
 </head>
+
 <body>
     <div id="maindiv">
-        <div class="internaldiv">
-                <h1>Click on the selective link</h1>
-                <ul style="opacity: 1">
-                    <li><a href="#primenumber">Print n prime numbers</a></li>
-                    <li><a href="#removedup">Remove duplicated from array</a></li>
-                    <li><a href="#precedencetable">Precedence Table</a></li>
-                </ul>
+        <div class="internaldiv" style="overflow: hidden">
+            <h1>Click on any link</h1>
+            <ul style="opacity: 1">
+                <li><a href="#primenumber">Print n prime numbers</a></li>
+                <li><a href="#removedup">Remove duplicated from array</a></li>
+                <li><a href="#precedence">JavaScript in tabular form</a></li>
+            </ul>
         </div>
     </div>
-    
+
     <div id="primenumber">
         <div class="internalprime">
             <h2>Enter the value of n </h2>
             <input type="text" value="" id="primeinput"><br><br>
-            <button onclick="primeNos()" style="margin-left: 46%">Generate</button>                
+            <button onclick="primeNos()" style="margin-left: 46%">Generate</button>
             <h3 id="output"></h3>
         </div>
     </div>
@@ -31,9 +35,650 @@
         <div class="internaldup" style="opacity: 0.85">
             <h2 style="color: black">Enter the size of array and click on enter elements button</h2>
             <input type="text" value="" id="size"><br><br>
-            <button onclick="removeDuplicates()" style="margin-left: 45%; background-color: darkgrey;">Enter elements</button>                   
+            <button onclick="removeDuplicates()" style="margin-left: 45%; background-color: darkgrey;">Enter
+                elements</button>
         </div>
     </div>
-    <script src="js/hwscript.js"></script>    
+
+    <div id="precedence">
+        <h1>Data Types of JavaScript</h1>
+        <table class="w3-table-all w3-card-4">
+            <thead>
+                <th class="data">Data Type</th>
+                <th class="example">Example</th>
+            </thead>
+            <tr>
+                <td class="data">numbers</td>
+                <td class="example"><span class="hide">1, 2.0, 3.02, 0.01</span><span class="tobehidden">Hover here for
+                        example</span></td>
+            </tr>
+            <tr>
+                <td class="data">string</td>
+                <td class="example"><span class="hide">"asdf", "a", "1"</span><span class="tobehidden">Hover here for
+                        example</span></td>
+            </tr>
+            <tr>
+                <td class="data">boolean</td>
+                <td class="example"><span class="hide">true, false</span><span class="tobehidden">Hover here for
+                        example</span></td>
+            </tr>
+            <tr>
+                <td class="data">null</td>
+                <td class="example"><span class="hide">null</span><span class="tobehidden">Hover here for example</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="data">undefined</td>
+                <td class="example"><span class="hide">var i; <br> typeof i; <br>> undefined</span><span
+                        class="tobehidden">Hover here for example</span></td>
+            </tr>
+            <tr>
+                <td class="data">object</td>
+                <td class="example"><span class="hide">{key: "value"},<br> [1, 2, w, "sssf", [1, 2]]</span><span
+                        class="tobehidden">Hover here for example</span></td>
+            </tr>
+            <tr>
+                <td class="data">typeof</td>
+                <td class="example"><span class="hide">typeof "i"</span><span class="tobehidden">Hover here for
+                        example</span></td>
+            </tr>
+
+        </table>
+        <h1>Different behaviour of operators in JavaScript</h1>
+        <table border="1" class="w3-table-all w3-card-4">
+            <thead>
+                <th>Operator</th>
+                <th>Type of operator</th>
+                <th>Operands</th>
+                <th>Output</th>
+            </thead>
+            <tr>
+                <td rowspan="29">+</td>
+                <td rowspan="29">Arithmetic operator</td>
+                <td>1 + 1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>1 +"1" / "1" + 1</td>
+                <td>"11"</td>
+            </tr>
+            <tr>
+                <td>"a" + 1</td>
+                <td>"a1"</td>
+            </tr>
+            <tr>
+                <td>1 + "a"</td>
+                <td>"1a"</td>
+            </tr>
+            <tr>
+                <td>"a" + "a"</td>
+                <td>"aa"</td>
+            </tr>
+            <tr>
+                <td>1 + {}</td>
+                <td>"1[object Object]</td>
+            </tr>
+            <tr>
+                <td>{} + 1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1 + [] / [] + 1</td>
+                <td>"1"</td>
+            </tr>
+            <tr>
+                <td>1 + [1,2]</td>
+                <td>11,2</td>
+            </tr>
+
+            <tr>
+                <td>[1,2] + 1</td>
+                <td>12,1</td>
+            </tr>
+            <tr>
+                <td>1 + typeof '1'</td>
+                <td>"1string"</td>
+            </tr>
+            <tr>
+                <td>null + 1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>null + "1"</td>
+                <td>"null1"</td>
+            </tr>
+            <tr>
+                <td>undefined + 1</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined + '1'</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined + "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined + []</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined + {}</td>
+                <td>NaN</td>
+            </tr>
+
+            <tr>
+                <td>{} + {}</td>
+                <td>"[object Object][object Object]"</td>
+            </tr>
+            <tr>
+                <td>{} + []</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>{} + [3]</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>{} + [1,2]</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>[] + {}</td>
+                <td>"[object Object]"</td>
+            </tr>
+            <tr>
+                <td>[3] + {}</td>
+                <td>"3[object Object]"</td>
+            </tr>
+            <tr>
+                <td>[3,2] + {}</td>
+                <td>"3,2[object Object]"</td>
+            </tr>
+            <tr>
+                <td>[] + []</td>
+                <td>""</td>
+            </tr>
+            <tr>
+                <td>[1] + []</td>
+                <td>"1"</td>
+            </tr>
+            <tr>
+                <td>[1] + [1,2]</td>
+                <td>"11,2"</td>
+            </tr>
+            <tr>
+                <td>[1,2] + [1,2,3]</td>
+                <td>"1,21,2,3"</td>
+            </tr>
+            <tr>
+                <td rowspan="28">-</td>
+                <td rowspan="28">Arithmetic operator</td>
+                <td>1 - 1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1 -"1" / "1" - 1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>"a" - "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>"a" + 1 / 1 - "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>1 - {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>{} - 1</td>
+                <td>-1</td>
+            </tr>
+            <tr>
+                <td>[] - 1</td>
+                <td>-1</td>
+            </tr>
+            <tr>
+                <td>1 - []</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>'1' - null</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>null - '1' / null - 1</td>
+                <td>-1</td>
+            </tr>
+            <tr>
+                <td>null - 'a' / 'a' - null</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>1 - [1,2] / [1,2] - 1</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined - 1</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined - '1'</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined - "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined - []</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined - {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>{} - {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>{} - []</td>
+                <td>-0</td>
+            </tr>
+            <tr>
+                <td>{} - [3]</td>
+                <td>-3</td>
+            </tr>
+            <tr>
+                <td>{} - [1,2]</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>[] - {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>[3] - {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>[3,2] - {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>[] - []</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>[1] - []</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>[1] - [1,2]</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>[1,2] - [1,2,3]</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+
+            <tr>
+                <td rowspan="12">*</td>
+                <td rowspan="12">Arithmetic operator</td>
+                <td>1 * 1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1 * "1" / "1" * 1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>"a" * 1 / 1 * "a"</td>
+                <td>NaN</td>
+            </tr>
+
+            <tr>
+                <td>"a" * "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>1 * {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>{} * 1</td>
+                <td>Uncaught SyntaxError</td>
+            </tr>
+            <tr>
+                <td>1 * [] / [] * 1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>undefined * 1</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined * '1'</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined * "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined * []</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined * {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td rowspan="12">/</td>
+                <td rowspan="12">Arithmetic Operator</td>
+                <td>1 / 1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>"a" / 1</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>1 / "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>[] / "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>"a" / []</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>"a" / {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>{} / "a"</td>
+                <td>Uncaught SyntaxError</td>
+            </tr>
+            <tr>
+                <td>undefined / 1</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined / '1'</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined / "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined / []</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined / {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td rowspan="12">%</td>
+                <td rowspan="12">Arithmetic Operator</td>
+                <td>10 % 3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>"a" % 10</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>10 % "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>10 % {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>{} % 10</td>
+                <td>Uncaught SyntaxError</td>
+            </tr>
+            <tr>
+                <td>[] % 10</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>10 % []</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined % 1</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined % '1'</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined % "a"</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined % []</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td>undefined % {}</td>
+                <td>NaN</td>
+            </tr>
+            <tr>
+                <td rowspan="12">> or <</td> <td rowspan="12">Comparison Operator</td>
+                <td>"1" > 1 / 1 > "a"</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>{} > 1</td>
+                <td>Uncaught SyntaxError</td>
+            </tr>
+            <tr>
+                <td>1 > {}</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>1 > []</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>1 > [1,1]</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>[] > 1</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>[1,1] > 1</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>undefined > 1</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>undefined > '1'</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>undefined > "a"</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>undefined > []</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>undefined > {}</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td rowspan="22">==</td>
+                <td rowspan="22">Equivalence Operator</td>
+                <td>1 == 1</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>1 == 2</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>1 == "1"</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>1 == {}</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>1 == []</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>1 == [1]</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>1 == "a"</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>"false" == "false"</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>false == false</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>"false" == false</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>undefined == undefined</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>undefined == "undefined"</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>null == null</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>null == "null"</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>undefined == null</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>{} == {}</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>{} == []</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>{} == [3]</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>{} == [1,2]</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>[] == []</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>[1] == []</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>[1] == [1,2]</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td rowspan="14">===</td>
+                <td rowspan="14">Equivalence Operator</td>
+                <td>1 === 1</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>'1' === 1</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>1 === []</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>1 === [1]</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>1 === "a"</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>"false" == "false"</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>false === false</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>"false" === false</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>undefined === undefined</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>undefined === "undefined"</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>null === null</td>
+                <td>true</td>
+            </tr>
+            <tr>
+                <td>null === "null"</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>undefined === null</td>
+                <td>false</td>
+            <tr>
+                <td>{} === {}</td>
+                <td>false</td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="js/hwscript.js"></script>
 </body>
+
 </html>

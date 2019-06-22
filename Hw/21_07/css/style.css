@@ -22,6 +22,8 @@ html{
     color: rgba(224, 127, 61);
     font-weight: bolder;
     font-size: 2em;
+    transition-property: all;
+    transition-duration: 0.2s;
 }
 
 #internaldiv{
@@ -35,4 +37,9 @@ html{
     margin-right: 10%;
     padding: 30px;
 
+}
+
+#link:hover{
+    transform: scale(1.5);
+    color: rgba(224, 127, 161);
 }

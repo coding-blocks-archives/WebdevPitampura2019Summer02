@@ -5,15 +5,14 @@
 
 #primenumber, #removedup ,#maindiv{
     height: 100vh;
-    width: 100vw;
-    min-height: 
+    width: 100%;
 }
 
 #maindiv{
     background: url(../images/hw.jpg) no-repeat center;
     background-size: cover;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     padding-top: 10vh;
     min-height: 500px;
 }
@@ -22,15 +21,21 @@
     background: url(../images/prime.jpeg) no-repeat center;
     background-size: cover;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     padding-top: 10vh;
+}
+
+#precedence{
+    width: 100%;
+    background-color: grey;
+    padding: 50px;
 }
 
 #removedup{
     background: url(../images/arts-arts-and-crafts-concept-1314543.png) no-repeat center;
     background-size: cover;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     padding-top: 10vh;
 }
 
@@ -44,12 +49,14 @@
 }
 
 .internaldiv,.internalprime,.internaldup{
-    border-radius: 10%;
+    border-radius: 30px;
     opacity: 0.8;
     width: 80%;
     height: 90%;
     margin-left: 10%;
     margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .internalprime{
@@ -66,7 +73,9 @@
 }
 
 h1{
-    font-size: 5em;
+    font-size: 5em !important;
+    text-decoration: underline;
+    font-family: 'Headland One', serif !important;
     padding-top: 5%;
     width: 100%;
     text-align: center;
@@ -74,6 +83,7 @@ h1{
 }
 
 h2{
+    text-decoration: underline;
     color: black;
     font-size: 40px;
     padding-top: 10%;
@@ -85,22 +95,36 @@ h2{
 h3{
     color: rgb(160, 37, 37);
     padding-top: 5%;
-    margin-left: 21%;
     text-justify: auto;
-    width: 60%;
+    width: 100%;
     text-align: center;
     font-size: 3em;
 }
 
 li{
     font-size: 42px;
-    list-style: circle;
+    list-style: none;
+    transition-property: all;
+    transition-duration: 0.2s;
 }
 
+li:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+
 a{
-    margin-left: 30%;
+    margin-left: 15%;
+    margin-right: 15%;
     text-decoration: none;
     color: rgb(191, 191, 191)
+}
+
+
+
+a:hover{
+    color: rgb(211, 211, 111)
 }
 
 div{
@@ -108,14 +132,14 @@ div{
 }
 
 input{
-    width: 35%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
     margin-left: 33%;
-    background-color: ;
-    border: 2px solid grey;
+    opacity: 0.5;
+    border: 2px solid black;
     border-radius: 20px;
     text-align: center;
     font-size: 40px;
@@ -127,4 +151,23 @@ button{
     padding: 15px;
     border-radius: 6px;
     font-size: 15px;
+    transition-property: all;
+    transition-duration: .3s;
+}
+
+button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+td.example:hover .hide{
+    display: block;
+}
+
+td.example:hover .tobehidden{
+    display: none;
 }
