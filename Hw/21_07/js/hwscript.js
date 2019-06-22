@@ -16,16 +16,19 @@ function primeNos () {
         if(arr[b] == true)
             result = result + " " + b
     }
+    document.getElementById('output').innerText = result
 
     console.log(result)
 }
 
 
 function removeDuplicates(){
-    var size = prompt("Enter the number of elements in array")
+    var size = parseInt(document.getElementById('size').value)
     var arr = new Array(size)
     for(let i = 0;i < size ; i++)
-        arr[i] = prompt("Enter the value")
+    {
+        arr[i] = prompt("Enter the element")
+    }
 
     var s = new Set(arr)
 

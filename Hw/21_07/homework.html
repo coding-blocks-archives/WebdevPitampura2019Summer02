@@ -8,12 +8,37 @@
     <title>Home Work</title>
 </head>
 <body>
-
-    Enter any number <input type="text" value="" id="primeinput">
-    <button onclick="primeNos()">Generate</button>
-
-    <br><br><br>
-    <button onclick="removeDuplicates()">Click here to remove duplicates program</button>
-    <script src="js/hwscript.js"></script>
+    <div id="maindiv">
+        <div class="internaldiv">
+                <h1>Click on the selective link</h1>
+                <ul>
+                    <li><a href="#primenumber">Print n prime numbers</a></li>
+                    <li><a href="#removedup">Remove duplicated from array</a></li>
+                    <li><a href="#precedencetable">Precedence Table</a></li>
+                </ul>
+        </div>
+    </div>
+    
+    <div id="primenumber">
+        <div class="internalprime">
+                <h2>Enter the value of n </h2>
+                <div class="buttondiv">
+                        <input type="text" value="" id="primeinput"><br>
+                        <button onclick="primeNos()">Generate</button>
+                </div>
+                
+                <h3 id="output"></h3>
+        </div>
+    </div>
+    <div id="removedup">
+        <div class="internaldup">
+                <h2 style="color: black">Enter the size of array and click on enter elements button</h2>
+                <div class="buttondiv">
+                        <input type="text" value="" id="size"><br>
+                        <button onclick="removeDuplicates()">Enter elements</button>                    
+                </div>
+        </div>
+    </div>
+    <script src="js/hwscript.js"></script>    
 </body>
 </html>
