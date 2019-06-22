@@ -15,6 +15,7 @@
     width: 100vw;
     height: 90vh;
     padding-top: 10vh;
+    min-height: 500px;
 }
 
 #primenumber{
@@ -26,7 +27,7 @@
 }
 
 #removedup{
-    background: url(../images/arts-arts-and-crafts-concept-1314543.jpg) no-repeat center;
+    background: url(../images/arts-arts-and-crafts-concept-1314543.png) no-repeat center;
     background-size: cover;
     width: 100vw;
     height: 90vh;
@@ -52,17 +53,16 @@
 }
 
 .internalprime{
-    background-color: rgba(8, 26, 23, 0.87);
+    background-color: rgba(158, 199, 192, 0.561);
+    min-height: 500px;
 }
 
 .internaldiv{
-
     background-color: rgb(11, 89, 141);
 }
 
 .internaldup{
-    background-color: orangered;
-    opacity: 0.6;
+    background-color: rgb(111,111,111);
 }
 
 h1{
@@ -74,7 +74,7 @@ h1{
 }
 
 h2{
-    color: blue;
+    color: black;
     font-size: 40px;
     padding-top: 10%;
     width: 100%;
@@ -83,7 +83,7 @@ h2{
 }
 
 h3{
-    color: aliceblue;
+    color: black;
     padding-top: 5%;
     margin-left: 21%;
     text-justify: auto;
@@ -98,7 +98,7 @@ li{
 }
 
 a{
-    margin-left: 35%;
+    margin-left: 30%;
     text-decoration: none;
     color: rgb(191, 191, 191)
 }
@@ -107,4 +107,24 @@ div{
     overflow: auto;
 }
 
+input{
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    margin-left: 33%;
+    background-color: ;
+    border: 2px solid grey;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 40px;
+}
 
+button{
+    opacity: 1;
+    background-color: grey;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 15px;
+}

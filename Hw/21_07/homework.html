@@ -11,7 +11,7 @@
     <div id="maindiv">
         <div class="internaldiv">
                 <h1>Click on the selective link</h1>
-                <ul>
+                <ul style="opacity: 1">
                     <li><a href="#primenumber">Print n prime numbers</a></li>
                     <li><a href="#removedup">Remove duplicated from array</a></li>
                     <li><a href="#precedencetable">Precedence Table</a></li>
@@ -21,22 +21,17 @@
     
     <div id="primenumber">
         <div class="internalprime">
-                <h2>Enter the value of n </h2>
-                <div class="buttondiv">
-                        <input type="text" value="" id="primeinput"><br>
-                        <button onclick="primeNos()">Generate</button>
-                </div>
-                
-                <h3 id="output"></h3>
+            <h2>Enter the value of n </h2>
+            <input type="text" value="" id="primeinput"><br><br>
+            <button onclick="primeNos()" style="margin-left: 46%">Generate</button>                
+            <h3 id="output"></h3>
         </div>
     </div>
     <div id="removedup">
-        <div class="internaldup">
-                <h2 style="color: black">Enter the size of array and click on enter elements button</h2>
-                <div class="buttondiv">
-                        <input type="text" value="" id="size"><br>
-                        <button onclick="removeDuplicates()">Enter elements</button>                    
-                </div>
+        <div class="internaldup" style="opacity: 0.85">
+            <h2 style="color: black">Enter the size of array and click on enter elements button</h2>
+            <input type="text" value="" id="size"><br><br>
+            <button onclick="removeDuplicates()" style="margin-left: 45%; background-color: darkgrey;">Enter elements</button>                   
         </div>
     </div>
     <script src="js/hwscript.js"></script>    

@@ -1,6 +1,6 @@
 
 var i = 0;
-var txt = 'Hey! I hope you are here to see my homework........';
+var txt = 'Hey! This is my homework........';
 function typingeffect() {
     if (i < txt.length) {
         document.getElementById("text").innerHTML += txt.charAt(i);
