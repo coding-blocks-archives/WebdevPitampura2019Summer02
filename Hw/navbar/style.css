@@ -49,12 +49,44 @@ i {
     margin-left: 10px;
 }
 
-li ~ i:hover{
-    color: orangered;
-}
 
-ul li:hover{
+li:hover{
     padding-right: 30px;
     color: orangered;
     cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    color: #81a1aa;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    color: orangered;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 160px;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }
