@@ -1,7 +1,8 @@
 function primeNos () {
     var n = parseInt(document.getElementById('primeinput').value)
     var arr = new Array(n+1)
-    var result = ""
+    var result = "Prime numbers upto "+n+" are "
+    document.getElementById("output").innerHTML = ""
     for(let i = 1 ; i <= n ; i++)
         arr[i] = true
 
@@ -14,10 +15,19 @@ function primeNos () {
 
     for(let b=2;b<=n;b++){
         if(arr[b] == true)
-            result = result + " " + b
+            result = result + " " + b +","
     }
-    document.getElementById('output').innerText = result
 
+    var t = 0
+    function typingeffect() {
+        if (t < result.length-1) {
+            document.getElementById("output").innerHTML += result.charAt(t);
+            t++;
+            setTimeout(typingeffect, 100);
+        }
+    }
+    
+    typingeffect()
     console.log(result)
 }
 
