@@ -1,0 +1,38 @@
+html{
+    font-family: 'B612 Mono', monospace;
+    background: url(../images/bJk.gif) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#bodydiv{
+    margin: .2em .5em;
+    text-align: center;
+}
+
+#bodydiv h1{
+    font-size: 3em;
+    color: azure;
+}
+
+#link{
+    visibility: hidden;
+    text-decoration: none;
+    color: rgba(224, 127, 61);
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#internaldiv{
+    border-radius: 10%;
+    background-color: rgba(20, 34, 34);
+    opacity: 0.8;
+    margin-top: 15%;
+    width: 80%;
+    height: 35%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+
+}
