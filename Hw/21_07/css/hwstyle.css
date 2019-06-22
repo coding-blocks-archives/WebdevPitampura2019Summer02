@@ -142,7 +142,7 @@ input{
     border: 2px solid black;
     border-radius: 20px;
     text-align: center;
-    font-size: 40px;
+    font-size: 40px !important;
 }
 
 button{
