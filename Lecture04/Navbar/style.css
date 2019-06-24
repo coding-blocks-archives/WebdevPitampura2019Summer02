@@ -1,8 +1,10 @@
-/* 
+
 #externalBlock{
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   
-} */
+}
 
 #logo{
     height: 100px;

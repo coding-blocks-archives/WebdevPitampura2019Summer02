@@ -3,3 +3,17 @@ function f1(i){
         console.log(index);  
     }
 }
+
+/*
+homework:
+methods in array-.map, .reduce .filter
+
+function to remove duplicate from js array
+
+precedence
+
+first n prime number function
+
+read about  DOM api
+
+*/
