@@ -2,8 +2,9 @@
 #externalBlock{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-  
+    flex-wrap: nowrap;
+    margin-top: 40px;
+  justify-content: center;
 }
 
 #logo{

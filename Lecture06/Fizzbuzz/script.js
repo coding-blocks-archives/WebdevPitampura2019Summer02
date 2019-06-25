@@ -5,11 +5,12 @@ let str =""
 function fizzbuzz() {
     let start = new Date().getTime();
     let num = enteredValue.value
+    list.innerHTML = '';
     for (var i = 1; i < num; i++) {
         if(i%3==0 && i%5==0) str += `<li>Fizzbuzz</li>`
         else if(i%3==0) str += `<li>Fizz</li>`
         else if(i%5==0) str += `<li>Buzz</li>`
-        else list.str+= `<li>${i}</li>`
+        else str+= `<li>${i}</li>`
     }
 
     list.innerHTML+=str
