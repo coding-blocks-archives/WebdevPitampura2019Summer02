@@ -1,0 +1,17 @@
+body{
+    background-color: antiquewhite;
+}
+/* ul li{
+    display: inline;
+} */
+img{
+    height: 200px;
+}
+table{
+    padding: 4px;
+    border:solid black 2px;
+    margin: 2px;
+}
+h6{
+    display: inline;
+}
