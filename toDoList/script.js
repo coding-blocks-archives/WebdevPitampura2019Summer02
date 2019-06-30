@@ -16,6 +16,7 @@ function clearTasks(){
     var done = document.getElementsByClassName('strikeText');   
     console.log(done);
     for(var i=0; i<done.length; i++){
-        done[i].style.display = 'none';
+        done[i].parentNode.removeChild(done[i])
+            i=-1;
    }
 }

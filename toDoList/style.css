@@ -1,13 +1,13 @@
 #title{
     width: 100%;
     height: 80px;
-    background-color: lightgray;
-    color: rgb(133, 0, 0);
+    background-color: rgb(32, 32, 32);
+    color: rgb(216, 122, 122);
     font-size: 4em;
     font-weight: bold;
     text-align: center;
     padding-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .text1{
@@ -28,18 +28,8 @@ input[type=text]:focus {
     border: 3px solid rgb(0, 0, 0);
   }
 
-#enter{
-    height: 30px;
-    width: 100px;
-}
-
-#clear{
-    height: 30px;
-    width: 100px;
-}
-
 .strikeText{
-    text-decoration: line-through black;
+    text-decoration: line-through rgb(131, 0, 0);
 }
 
 #list{
@@ -51,3 +41,20 @@ input[type=text]:focus {
 #clearTasks{
     margin-left: 15%;
 }
+
+button{
+    color: whitesmoke;
+    background-color: rgb(65, 65, 65);
+    height: 30px;
+    width: 150px;
+}
+
+button:hover{
+    border: solid 1px black;
+    box-shadow: 2px 2px 1px black; 
+    color: rgb(240, 96, 83);
+    transform: scale(1.15);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
