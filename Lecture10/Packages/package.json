@@ -1,0 +1,16 @@
+{
+  "name": "expresstest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abhishek",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "is-natural-number": "^4.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
