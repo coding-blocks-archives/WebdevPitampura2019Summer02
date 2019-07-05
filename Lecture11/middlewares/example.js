@@ -29,7 +29,7 @@ function m5 (req, res, next) {
   next()
 }
 
-app.use(m1)
+app.use(m1, ())
 app.use(m2)
 app.use(m3)
 app.use('/a', m4)
