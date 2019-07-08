@@ -17,6 +17,7 @@ const fetchFromServer = () => {
         })
 }
 
+
 fetchFromServer()
 
 
@@ -43,7 +44,7 @@ document.getElementById("addButton").addEventListener('click', e => {
     }).then(response => response.json())
     .then(newBand => bandsState.push(newBand))
     .then(paint)
-    
+
     // bandsState.push({
     //     title: inputText,
     //     striked: false
@@ -54,10 +55,28 @@ document.getElementById("addButton").addEventListener('click', e => {
 document.getElementById('list').addEventListener('click', e => {
     const index = e.target.dataset.index
     bandsState[index].striked = !bandsState[index].striked
-    paint()
+
+    fetch('api/todos/' + bandsState[index].id, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(bandsState[index])
+    })
+    .then(response => response.json())
+    .then(data => bandsState[index]=data)
+    .then(paint)
+
 })
 
 document.getElementById('clearButton').addEventListener('click', e => {
-    bandsState = bandsState.filter(band => !band.striked)
-    paint()
+    const bandsToDelete = bandsState.filter(band => band.striked)
+    const deletePromises = bandsToDelete.map(band => {
+        return fetch('/api/todos/' + band.id, {
+            method: 'DELETE'
+        })
+    })
+
+    Promise.all(deletePromises).then(fetchFromServer)
+    // paint()
 })
