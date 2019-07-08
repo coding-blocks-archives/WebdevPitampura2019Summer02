@@ -1,0 +1,15 @@
+{
+  "name": "is-natural-number",
+  "version": "1.0.0",
+  "description": "natural number reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "WebDevPitampura2019Summer02"
+  },
+  "author": "harsh",
+  "license": "ISC"
+}

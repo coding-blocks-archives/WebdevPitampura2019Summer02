@@ -1,0 +1,92 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'is-natural-number',
+1 verbose cli   '--save' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData is-natural-number
+8 silly fetchNamedPackageData is-natural-number
+9 silly mapToRegistry name is-natural-number
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/is-natural-number
+13 verbose request uri https://registry.npmjs.org/is-natural-number
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 14:13:25
+16 verbose request id eab0ef3a8054df6c
+17 verbose etag W/"ba8f1d1e6193f6497f4d23e2fb9e415d"
+18 verbose lastModified Sun, 27 May 2018 04:59:25 GMT
+19 http request GET https://registry.npmjs.org/is-natural-number
+20 http 304 https://registry.npmjs.org/is-natural-number
+21 verbose headers { date: 'Tue, 02 Jul 2019 08:43:25 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'set-cookie':
+21 verbose headers    [ '__cfduid=df322f764f4861d07b00a7cb493f3eb651562057005; expires=Wed, 01-Jul-20 08:43:25 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+21 verbose headers   'cf-cache-status': 'HIT',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'cf-ray': '4eff54fbfbbeab10-MAA',
+21 verbose headers   age: '6082',
+21 verbose headers   etag: '"ba8f1d1e6193f6497f4d23e2fb9e415d"',
+21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 verbose headers   'last-modified': 'Sun, 27 May 2018 04:59:25 GMT',
+21 verbose headers   vary: 'accept-encoding, accept',
+21 verbose headers   server: 'cloudflare' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Tue, 02 Jul 2019 08:43:25 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'set-cookie':
+22 silly get      [ '__cfduid=df322f764f4861d07b00a7cb493f3eb651562057005; expires=Wed, 01-Jul-20 08:43:25 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+22 silly get     'cf-cache-status': 'HIT',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'cf-ray': '4eff54fbfbbeab10-MAA',
+22 silly get     age: '6082',
+22 silly get     etag: '"ba8f1d1e6193f6497f4d23e2fb9e415d"',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     'last-modified': 'Sun, 27 May 2018 04:59:25 GMT',
+22 silly get     vary: 'accept-encoding, accept',
+22 silly get     server: 'cloudflare' } ]
+23 verbose etag https://registry.npmjs.org/is-natural-number from cache
+24 verbose get saving is-natural-number to /home/harsh/.npm/registry.npmjs.org/is-natural-number/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly rollbackFailedOptional Starting
+38 silly rollbackFailedOptional Finishing
+39 silly runTopLevelLifecycles Starting
+40 silly runTopLevelLifecycles Finishing
+41 silly install printInstalled
+42 verbose stack Error: Refusing to install is-natural-number as a dependency of itself
+42 verbose stack     at checkSelf (/usr/share/npm/lib/install/validate-args.js:40:14)
+42 verbose stack     at Array.<anonymous> (/usr/share/npm/node_modules/slide/lib/bind-actor.js:15:8)
+42 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:15:14)
+42 verbose stack     at chain (/usr/share/npm/node_modules/slide/lib/chain.js:20:5)
+42 verbose stack     at /usr/share/npm/lib/install/validate-args.js:15:5
+42 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:35
+42 verbose stack     at Array.forEach (<anonymous>)
+42 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:11
+42 verbose stack     at Array.forEach (<anonymous>)
+42 verbose stack     at asyncMap (/usr/share/npm/node_modules/slide/lib/async-map.js:51:8)
+43 verbose cwd /home/harsh/WebdevPitampura2019Summer02/Lecture10/packages
+44 error Linux 4.18.0-24-generic
+45 error argv "/usr/bin/node" "/usr/bin/npm" "install" "is-natural-number" "--save"
+46 error node v8.10.0
+47 error npm  v3.5.2
+48 error code ENOSELF
+49 error Refusing to install is-natural-number as a dependency of itself
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

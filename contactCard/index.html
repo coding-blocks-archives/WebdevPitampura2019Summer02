@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Card Generator</title>
+</head>
+<style>
+    ul, li{
+    list-style-type: none;
+    /*margin: 0;
+    padding: 0;*/
+}
+    #card{
+        border: solid 1px black;
+        height: 100px;
+        width: 300px;
+        margin: 20px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+
+    Name:<input id="name" type="text" autocomplete="off" ><br>
+    Mobile Number: <input id="phone" type="number" min="7000000000" max="9999999999" ><br>
+    Roll Number: <input id="roll" type="number" ><br>
+    <button type="submit" id="addButton">Add</button>
+    
+
+    <ul id="container">
+
+    </ul>
+</body>
+<script src="index.js"></script>
+
+</html>
