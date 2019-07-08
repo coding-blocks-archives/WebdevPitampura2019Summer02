@@ -34,11 +34,21 @@ const paint = function () {
 
 document.getElementById("addButton").addEventListener('click', e => {
     const inputText = document.getElementById('inputBox').value
-    bandsState.push({
-        title: inputText,
-        striked: false
-    })
-    paint()
+    fetch('api/todos', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({title: inputText})
+    }).then(response => response.json())
+    .then(newBand => bandsState.push(newBand))
+    .then(paint)
+    
+    // bandsState.push({
+    //     title: inputText,
+    //     striked: false
+    // })
+    // paint()
 })
 
 document.getElementById('list').addEventListener('click', e => {
