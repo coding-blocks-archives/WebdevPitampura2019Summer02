@@ -1,0 +1,14 @@
+1. URL location changes
+2. wait for response
+3. Form submits
+(using method and action)
+
+4. Input 'name' becomes keys
+
+5. Express URLencoded also parses HTML forms
+
+
+
+By default button submits the immediate parent forms.
+
+"type of buttons"?
