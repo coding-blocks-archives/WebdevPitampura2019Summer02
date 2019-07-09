@@ -5,7 +5,8 @@ app.set('view engine', 'hbs')
 
 app.use(express.urlencoded({extended: true}))
 
-const bands = [{
+// chaging const to let
+let bands = [{
     id: 1,
     title: 'Nirvana',
     striked: false
@@ -35,6 +36,17 @@ app.post('/update/:id', (req, res) => {
     res.redirect('/')
 })
 
+app.post('/delete', (req, res)=>{
+
+    function alpha(obj,index){
+        obj.id = index+1
+        return obj
+    }
+    const newBandList = bands.filter((obj) => obj.striked === false).map(alpha)
+    bands = newBandList
+    res.redirect('/')
+})
+
 app.listen(3000, function () {
-    console.log("Listening on 30000")
+    console.log("Listening on 3000")
 })
