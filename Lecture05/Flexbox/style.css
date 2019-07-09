@@ -1,0 +1,30 @@
+.container {
+    height: 700px;
+    width: 700px;
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 10px;
+    color: white;
+    text-align: center
+}
+
+.item2 {
+    order: 2
+}
+
+.item3 {
+    order: -1;
+    flex-grow: 2;
+}
