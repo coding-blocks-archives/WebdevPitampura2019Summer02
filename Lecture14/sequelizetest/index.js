@@ -50,6 +50,28 @@ app.post('/', (req, res) => {
   })
 })
 
+app.patch('/:id', (req, res) => {
+  Bands.update(req.body, {
+    where: {
+      id: req.params.id
+    }
+  }).then(() => {
+    res.sendStatus(204)
+  })
+})
+
+app.delete('/', (req, res) => {
+  Bands.destroy({
+    where: {
+      striked: true
+    }
+  }).then(() => {
+    res.sendStatus(204)
+  }).catch(err => {
+    console.log(err)
+    res.sendStatus(500)
+  })
+})
 
 
 Bands.sync().then(() => {
