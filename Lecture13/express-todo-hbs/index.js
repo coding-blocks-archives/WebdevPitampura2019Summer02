@@ -5,7 +5,7 @@ app.set('view engine', 'hbs')
 
 app.use(express.urlencoded({extended: true}))
 
-const bands = [{
+let bands = [{
     id: 1,
     title: 'Nirvana',
     striked: false
@@ -32,6 +32,13 @@ app.post('/update/:id', (req, res) => {
     const band = bands.find(b => b.id == req.params.id)
     band.title = req.body.title
     band.striked = !(req.body.striked == "true")
+    res.redirect('/')
+})
+
+app.post('/delete', (req, res) => {
+    bands = bands
+        .filter(b => !b.striked)
+        .map((el, index) => ({ ...el, id: index + 1}))
     res.redirect('/')
 })
 
