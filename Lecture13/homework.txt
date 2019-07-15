@@ -1,0 +1,9 @@
+1. todo using jquery
+2. Graceful JS fallback in todo(for add)
+3. *SQL* => SQLite install
+    -Basic Commands
+        ->Select
+        ->Insert
+        ->Update
+        ->Delete
+        ->Join

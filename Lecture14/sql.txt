@@ -1,0 +1,10 @@
+1. JS: fetch() -> HTTP req
+2. Route Handler -> ORM
+3. ORM -(sql)-> Driver
+4. Driver executes SQL on database
+5. ORM parses  Database res
+6. App server sends res
+7. JS gets res
+8. Causes DOM manipulation
+9. UI changes
+10. Profit?

@@ -1,0 +1,3 @@
+sequelize documentation(getting started)
+
+fetch() -> API DB
