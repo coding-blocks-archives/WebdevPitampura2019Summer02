@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+
+<style>
+    .striked {
+        text-decoration: line-through;
+    }
+</style>
+<body>
+    <form action="/" method="POST" id="addBand">
+        <input type="text" name="title">
+
+        <button>Add</button>
+    </form>
+
+    <ul id="list">
+      {{#each bands}}
+        <li {{#if striked}} class="striked" {{/if}}>
+        
+          <form action="/update/{{id}}" method="POST">  
+            <input type="hidden" name="title" value="{{title}}">
+            <input type="hidden" name="striked" value="{{striked}}">
+            {{title}}
+            <button>
+               {{#if striked}}
+                Unmark
+              {{else}}
+                Mark
+              {{/if}}
+            </button>
+          </form>
+        </li>
+      {{/each}}
+    </ul>
+
+
+    <form action="/delete" method="POST">
+      <button>BIN</button>
+    </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
