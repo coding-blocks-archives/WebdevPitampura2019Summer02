@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Player</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    .main-row {
+      height: 100%;
+    }
+    .sidebar {
+      border-right: 1px solid grey;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5 pt-5">
+    <div class="row main-row">
+      <div class="col-3 sidebar">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/add">Add</a>
+          </li>
+          <hr>
+          {{#each tracks}}
+            <li class="nav-item">
+              <a class="nav-link" href="/?id={{_id}}"> {{title}} </a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="offset-1 col-8">
+
+        {{#if selectedTrack}}
+          <h2> {{selectedTrack.title}} </h2>
+          <small>By {{selectedTrack.singer}} </small>
+          <hr>
+          <div class="my-5">
+            <div>
+              <img src="{{selectedTrack.image}}" alt="{{selectedTrack.title}}" height="250">
+            </div>
+            <audio class="my-3" src="{{selectedTrack.file}}" controls autoplay></audio>
+          </div>
+        {{else}}
+          <div class="jumbotron">
+            <div class="container">
+              <h1 class="display-4">Welcome to My Player</h1>
+              <p class="lead">
+                This is built using HTML, CSS and JS. Uses Node+Express as Application Server and Mongodb as Database.
+              </p>
+            </div>
+          </div>
+        {{/if}}
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+</html>
