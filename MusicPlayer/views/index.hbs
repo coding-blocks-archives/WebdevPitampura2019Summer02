@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <a href="/" class="list-group-item list-group-item-action active">
+                Home
+            </a><br>
+            <a href="add" class="list-group-item list-group-item-action active">
+                Add New Song
+            </a>
+
+            <ul class="list-group">
+                {{#each tracks}}
+                <li class="list-group-item"><a href="/?id={{_id}}">{{title}}</a> </li>
+
+                {{/each}}
+            </ul>
+        </div>
+
+        <br><br><br>
+
+        {{#if selectedTrack}}
+
+        <h1>{{selectedTrack.title}}</h1>
+        <h3>By {{selectedTrack.artist}}</h3>
+        <img src="{{selectedTrack.image}}">
+        <audio class="my-3" src="{{selectedTrack.file}}" controls autoplay></audio>
+        {{/if}}
+        
+
+        {{#else}}
+        <h1>This is the Homepage</h1>
+        {{/else}}
+
+    </div>
+
+</body>
+
+</html>
