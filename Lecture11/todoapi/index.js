@@ -4,7 +4,7 @@ const app = express()
 
 const todoRoute = require('./todos')
 
-let todos = []
+// let todos = []
 
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
