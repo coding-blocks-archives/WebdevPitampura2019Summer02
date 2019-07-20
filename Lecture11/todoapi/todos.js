@@ -1,6 +1,9 @@
 const express = require('express')
 const route = express.Router()
 
+
+let todos = []
+
 route.get('/', (req, res) => {
     res.send(todos)
 })
@@ -28,7 +31,8 @@ route.delete('/:id', (req, res) => {
 
 route.patch('/:id', (req, res) => {
     let todo = todos.find(t => t.id == req.params.id)
-    todo.striked = !!req.body.striked
+    // todo.striked = !!req.body.striked
+    todo.striked = req.body.striked === 'true'
     todo.title = req.body.title
     res.send(todo)
 })
