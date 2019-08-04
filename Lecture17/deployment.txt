@@ -1,0 +1,5 @@
+->SSH
+->nvm
+->pm2:-demonizes your server- if the process is killed it will restart again.
+      -CLI to manage node process
+      -to run server in background

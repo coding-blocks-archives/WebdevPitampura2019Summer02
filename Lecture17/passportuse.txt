@@ -1,0 +1,12 @@
+1. Strategy Selection
+    - passport.use(...)
+2. initialise express-session for cookies
+3. passport initialise (mount to app)
+4. mount passport.session
+5. Define user serialization/deserialization
+6. mount passport.authenticate('Strategyname) with post(login path)
+
+
+HW. 1. connect pass to DB
+    2. codeinjection- openssl 
+    3. Bearer Auth with session table

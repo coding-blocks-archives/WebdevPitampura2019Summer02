@@ -14,8 +14,10 @@ app.get('/', (req, res) => {
     const selectedTrack = tracks.find(t => t._id == id)
     res.render('index', { tracks, selectedTrack })
   })
-  
 })
+
+
+
 
 
 app.get('/add', (req, res) =>{
