@@ -1,0 +1,17 @@
+div{
+    height:100px;
+    width:100px;
+    background-color: aqua;
+    text-align: center;
+    display:inline-block;
+   /*    display:none;*//* by default display value is "block"*/
+}
+ul ul
+{
+    display:none;
+}
+li:hover>ul{
+    
+      display:block;
+    
+}

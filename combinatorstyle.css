@@ -1,0 +1,14 @@
+div p{
+
+    background-color: aqua;
+}/* descendant child selector*/
+div >p{
+    color:royalblue;
+}
+div+p{
+    background-color: blue;
+
+}
+div ~p{
+    color:green;
+}

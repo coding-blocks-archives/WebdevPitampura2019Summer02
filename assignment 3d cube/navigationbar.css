@@ -1,0 +1,33 @@
+ navbar div{
+    background-color:black;
+    height:35px;
+    width:208px;
+    margin-top: 20px;
+    color:darkgrey;
+    float:left;
+    
+    
+}
+body{
+    margin-left:20px;
+}
+ navbar div li  {
+display:none;
+}
+navbar div li ul{
+    display:none;
+}
+navbar div li:hover ul{
+display:block;
+position:absolute;
+right:0;
+}
+navbar div:hover li{
+    display:block;
+}
+navbar div:hover ul{
+    position:absolute;
+}
+
+
+

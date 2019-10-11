@@ -1,0 +1,14 @@
+a:hover{
+    color:chartreuse;
+}
+a:active
+{
+    background-color: aqua;
+}
+p:first-child{
+    background-color: yellow;
+}
+p:last-child{
+    color:green;
+}
+
